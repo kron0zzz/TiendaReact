@@ -1,0 +1,13 @@
+
+.options{
+    display: flex;
+    justify-content: space-around;
+    border-top:1px solid rgb(226, 226, 226);
+}
+.copy{
+    display: flex;
+    justify-content: center;
+}
+.options p:hover{
+    cursor: pointer;
+}

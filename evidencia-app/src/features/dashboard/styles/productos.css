@@ -1,0 +1,74 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+.products{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.card{
+    background-color: rgb(247, 247, 247);
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.card:hover{
+    box-shadow: 5px 4px 4px gray;
+    cursor: pointer;
+    background-color: rgb(231, 231, 231);
+}
+
+.card .image{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .image img{
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.card .info{
+    position: relative;
+    height: 40%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.card .info h4{
+    margin: 0;
+    
+}
+.card .info p{
+    font-size: 20px;
+    color: brown;
+    margin-bottom: 100px;
+}
+.card .info button{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+}
+.card .info button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
