@@ -1,9 +1,15 @@
 import '../styles/productos.css'
 import products from '../../../products.json'
+import Header from '../../shared/components/header'
+import Slider from '../../shared/components/slider'
+import Footer from '../../shared/components/footer'
 function Productos() {
 
 
   return (
+    <>
+    <Header/>
+    <Slider/>
     <section className="products">
         {products.map(product =>(
             <div className="card" key={product.id}>
@@ -20,6 +26,8 @@ function Productos() {
         ))}
       
     </section>
+    <Footer/>
+    </>
   
   )
 }

@@ -1,21 +1,26 @@
+import React from 'react';
+import {Routes, Route} from 'react-router-dom';
 
-import Header from './features/shared/components/header'
-import Slider from './features/shared/components/slider'
+import HomePage from './features/homePage/components/HomePage'
 import Productos from './features/dashboard/components/productos'
-import Footer from './features/shared/components/footer'
+import Cart from './features/carrito/components/cart'
+
 
 
 
 function App(){
   return (
     <>
-    <Header/>
-    <Slider/>
-    <Productos/>
-    <Footer/>
+
+    <Routes>
+      <Route path="/" element={<HomePage/>} />
+      <Route path="/productos" element={<Productos/>} />
+      <Route path="/carrito" element={<Cart/>}/>
+    </Routes>
+
+    
 
     </>
   )
 }
-
 export default App
