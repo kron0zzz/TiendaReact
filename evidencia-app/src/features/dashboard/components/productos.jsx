@@ -3,7 +3,7 @@ import products from '../../../products.json'
 import Header from '../../shared/components/header'
 import Slider from '../../shared/components/slider'
 import Footer from '../../shared/components/footer'
-function Productos() {
+function Productos({onAddToCart}) {
 
 
   return (
@@ -19,7 +19,7 @@ function Productos() {
                 <div className="info">
                     <h4>{product.title}</h4>
                     <p>${product.price} USD</p>
-                    <button>Ver Más</button>
+                    <button onClick={() => onAddToCart(product)}>Agregar al carrito</button>
 
                 </div>
             </div>
