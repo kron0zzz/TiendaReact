@@ -3,3 +3,8 @@
     resta:  - usar localStorage para que al actualizar no se pierda el carrito
             - en productos, hacer alguna guía visual que indique que el carrito ya tiene algún producto
             - en productos, hacer alguna guía visual que indique que x producto ya está en el carrito
+- estilos responsive del header y carrito       09/09/2025
+    resta:  - estilos responsive para sección de catálogo
+            - usar localStorage para que al actualizar no se pierda el carrito
+            - en productos, hacer alguna guía visual que indique que el carrito ya tiene algún producto
+            - en productos, hacer alguna guía visual que indique que x producto ya está en el carrito

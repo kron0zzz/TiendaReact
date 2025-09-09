@@ -27,13 +27,45 @@
 
     table th, table td {
       padding: 12px;
-      text-align: center;
+      text-align: center; 
       border-bottom: 1px solid #ddd;
     }
 
     table td img {
       width: 60px;
       border-radius: 8px;
+    }
+
+    @media (max-width: 768px){
+      .container{
+        width: 100%;
+        padding:20px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+
+      table thead {
+        background: #a3a3a3;
+        color: #fff;
+      }
+      table thead th{
+        font-size: 10px;
+      }
+
+      table th, table td {
+        padding: 12px;
+        text-align: center; 
+        border-bottom: 1px solid #ddd;
+        font-size: 70%;
+      }
+
+      table td img {
+        width: 60px;
+        border-radius: 8px;
+      }
     }
 
     .actions button {
@@ -66,6 +98,7 @@
     .summary {
       text-align: right;
       font-size: 18px;
+      padding: 0 20px;
     }
 
     .summary strong {

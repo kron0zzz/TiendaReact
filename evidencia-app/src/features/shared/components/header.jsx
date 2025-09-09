@@ -1,9 +1,9 @@
 import '../styles/header.css'
-import React from 'react'
+import React, {useState} from 'react'
 import {NavLink} from 'react-router-dom'
 
 function Header() {
-
+  const [open, setOpen] = useState(false)
 
   return (
     <>
@@ -12,7 +12,11 @@ function Header() {
                 <h1>KeyStore</h1>
             </div>
 
-            <div className="nav">
+            <div className="menu-toggle" onClick={() => setOpen(!open)}>☰</div>
+          
+          
+
+            <div className={`nav ${open ? "active" : ""}`}>
             <ul>
                 <li><NavLink to="/" className="a">Inicio</NavLink></li> 
                 <li><NavLink to="/productos" className="a">Catálogo</NavLink></li>

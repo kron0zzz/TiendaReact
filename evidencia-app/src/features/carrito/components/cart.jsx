@@ -10,7 +10,7 @@ function Cart ({cart, onAdd, onRemove}){
         <>
            
 
-        <div>
+        
             <div className="container">
                 <h1>🛒 Carrito de Compras</h1>
                 {cart.length === 0 ? (
@@ -67,7 +67,7 @@ function Cart ({cart, onAdd, onRemove}){
                     <button>Finalizar Compra</button>
                 </div>
             </div>
-        </div>
+    
 
         </>
     )
