@@ -16,6 +16,11 @@
     }
 
 
+
+
+
+
+
     .about {
       max-width: 1000px;
       margin: 50px auto;
@@ -29,7 +34,7 @@
     .about h2 {
       font-size: 32px;
       margin-bottom: 20px;
-      color: #007bff;
+      color: #b90000;
     }
 
     .about p {
@@ -41,7 +46,7 @@
 
     .about .highlight {
       font-weight: bold;
-      color: #007bff;
+      color: #b90000;
     }
 
     .about img {
@@ -50,3 +55,81 @@
       border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
+
+
+
+
+
+
+    /* Sección de contacto */
+.contacto {
+  padding: 3rem 1rem;
+  background: url('https://e0.pxfuel.com/wallpapers/334/672/desktop-wallpaper-macro-letters-mail.jpg') no-repeat center center/cover;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.contacto p {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* Formulario */
+.form-contacto {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-contacto div {
+  margin-bottom: 1.5rem;
+}
+
+.form-contacto label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Botón */
+.form-contacto button {
+  display: inline-block;
+  background: #b90000;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-contacto button:hover {
+  background: #0056b3;
+}

@@ -12,7 +12,7 @@ function Cart ({cart, onAdd, onRemove}){
 
         
             <div className="container">
-                <h1>🛒 Carrito de Compras</h1>
+                <h1>Carrito de Compras</h1>
                 {cart.length === 0 ? (
                     <p> Tu carro está vacío </p>
                 ): (
