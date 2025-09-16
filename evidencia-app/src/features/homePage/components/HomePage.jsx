@@ -2,8 +2,29 @@ import Header from '../../shared/components/header'
 import Footer from '../../shared/components/footer'
 import '../styles/HomePage.css'
 
-function HomePage(){
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';     //Importaciones para contacto de email
 
+function HomePage(){
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+        .sendForm('service_b6k7ekn', 'template_7hw2du7', form.current, {
+            publicKey: '1jDs-UOFXlFeyhNb1',
+        })
+        .then(
+            () => {
+            console.log('SUCCESS!');
+            form.current.reset();
+            },
+            (error) => {
+            console.log('FAILED...', error.text);
+            },
+        );
+    };
     return(
         <>
             <Header/>
@@ -28,11 +49,15 @@ function HomePage(){
             </section>
 
 
+
+
+
+
             <section id="contactus" className="contacto">
                 <h2>Contáctanos</h2>
                 <p>Si tienes dudas o comentarios, llena este formulario y te responderemos pronto.</p>
 
-                <form className="form-contacto">
+                <form className="form-contacto" ref={form} onSubmit={sendEmail}>
                     <div>
                     <label htmlFor="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />

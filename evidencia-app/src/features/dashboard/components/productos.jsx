@@ -5,7 +5,7 @@ import {fetchProducts} from "../../../api/products_api"
 import Header from '../../shared/components/header'
 import Slider from '../../shared/components/slider'
 import Footer from '../../shared/components/footer'
-function Productos({onAddToCart}) {
+function Productos({onAddToCart, cartCount}) {
 
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -23,7 +23,7 @@ function Productos({onAddToCart}) {
 
   return (
     <>
-    <Header/>
+    <Header cartCount={cartCount}/>
     <Slider/>
     <section className="products">
         {products.map(product =>(

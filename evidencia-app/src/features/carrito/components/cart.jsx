@@ -63,7 +63,7 @@ function Cart ({cart, onAdd, onRemove}){
                     <p>Total: <strong>${total}</strong></p>
                 </div>
                 <div className="checkout">
-                    <button><NavLink to="/" className="btn-content" >Volver al inicio</NavLink></button>
+                    <button><NavLink to="/productos" className="btn-content" >Volver al catálogo</NavLink></button>
                     <button>Finalizar Compra</button>
                 </div>
             </div>

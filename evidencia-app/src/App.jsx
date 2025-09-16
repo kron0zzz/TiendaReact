@@ -11,6 +11,7 @@ import Cart from './features/carrito/components/cart'
 function App(){
 
   const [cart, setCart] = useState([]);
+  const cartCount = cart.length;
 
   // ➕ Agregar producto al carrito
   const handleAddToCart = (product) => {
@@ -50,7 +51,7 @@ function App(){
 
     <Routes>
       <Route path="/" element={<HomePage/>} />
-      <Route path="/productos" element={<Productos onAddToCart={handleAddToCart} />} />
+      <Route path="/productos" element={<Productos onAddToCart={handleAddToCart} cartCount={cartCount}/>} />
       <Route path="/carrito" element={<Cart 
               cart={cart}
               onAdd={handleAddToCart}
